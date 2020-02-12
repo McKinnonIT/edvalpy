@@ -4,8 +4,8 @@
 
 - [About](#about)
 - [Getting Started](#getting_started)
+- [Installing](#installing)
 - [Usage](#usage)
-- [Contributing](../CONTRIBUTING.md)
 
 ## About <a name = "about"></a>
 
