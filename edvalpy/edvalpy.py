@@ -58,7 +58,7 @@ class Edval:
         self._configs_url = "https://spring.edval.education/api/v1/daily/sync/configs"
         self.session = requests.session()
         self.login(token)
-        self.get_configs(
+        self.get_configs()
 
     def __getattr__(self, key):
         return [c for c in self.configs if c.name == key][0]
