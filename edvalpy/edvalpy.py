@@ -2,12 +2,13 @@ import os
 import requests
 from io import BytesIO
 from zipfile import ZipFile
-from helpers.dates import get_sync_dates
+from .helpers.dates import get_sync_dates
 
 
 class Sync:
     def __init__(self, config, session):
         self.zip = None
+        self.name = config["sisCode"]
         self._config = config
         self._session = session
         self._base_url = "https://spring.edval.education/api/v1/daily/syncAuto/{}"
