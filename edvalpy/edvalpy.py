@@ -60,7 +60,7 @@ class Edval:
         self.get_configs(
 
     def __getattr__(self, key):
-        return [c for c in self.configs if c.name == key][0
+        return [c for c in self.configs if c.name == key][0]
 
     def login(self, token):
         data = {"webCode": token, "rememberMe": "false"}
