@@ -78,4 +78,4 @@ class Edval:
 
 
 if __name__ == "__main__":
-    edval = Edval("HPW7KRX")
+    pass
