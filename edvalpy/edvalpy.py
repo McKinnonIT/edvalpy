@@ -11,8 +11,8 @@ class Sync:
         self.name = config["sisCode"]
         self._config = config
         self._session = session
-        self._base_url = "https://spring.edval.education/api/v1/daily/syncAuto/{}"
-        self._base_download_url = "https://spring.edval.education/files/{}"
+        self._base_url = "https://my.edval.education/api/v1/daily/syncAuto/{}"
+        self._base_download_url = "https://my.edval.education/files/{}"
 
     def __repr__(self):
         return f"{self._config['sisCode']} ({self._config['syncConfigCode']})"
@@ -54,8 +54,8 @@ class Sync:
 
 class Edval:
     def __init__(self, token):
-        self._login_url = "https://spring.edval.education/api/auth/login"
-        self._configs_url = "https://spring.edval.education/api/v1/daily/sync/configs"
+        self._login_url = "https://my.edval.education/api/auth/login"
+        self._configs_url = "https://my.edval.education/api/v1/daily/sync/configs"
         self.session = requests.session()
         self.login(token)
         self.get_configs()
