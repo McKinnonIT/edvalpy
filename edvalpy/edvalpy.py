@@ -26,7 +26,7 @@ class Sync:
         )
         if resp.json().get("data"):
             zip_file = self._session.get(
-                self._base_download_url,
+                self._base_download_url.format(resp.json()["data"]["id"]),
                 data=get_sync_dates(),
             )
             self.zip = ZipFile(BytesIO(zip_file.content))
