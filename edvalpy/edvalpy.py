@@ -48,7 +48,7 @@ class Sync:
         if not file_path:
             file_path = os.getcwd()
         if my_file:
-            with open(file_path, "wb") as f:
+            with open(os.path.join(file_path, file_name), "wb") as f:
                 f.write(my_file.getvalue())
 
 
