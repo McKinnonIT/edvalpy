@@ -4,6 +4,10 @@ from io import BytesIO
 from zipfile import ZipFile
 from .helpers.dates import get_sync_dates
 
+##############################################################################################################################
+# Reminder! By default, classrooms DO NOT REMOVE students or teachers unless explicitly set by the addonly property.         #
+# - https://gitlab.com/mckinnon-sc-tech/gsuite-google-classroom-sync/classroom-group-sync-docker/-/blob/master/run.py#L76-79 #
+##############################################################################################################################
 
 class Sync:
     def __init__(self, config, session):
