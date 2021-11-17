@@ -23,7 +23,7 @@ pip install -r requirements.txt
 
 ```python
 In [23]: from edvalpy import Edval
-In [24]: edval = Edval("A4QYB5Q")
+In [24]: edval = Edval("YOUR_EDVAL_WEB_TOKEN")
 In [25]: edval.configs
 Out[25]: [ischolaris (1), compass (2)]
 In [26]: edval.ischolaris.files()
