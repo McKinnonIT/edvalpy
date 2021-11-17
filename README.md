@@ -1,19 +1,17 @@
 # edvalpy
 
-## Table of Contents
-
 - [Prerequisites](#prerequisites)
 - [Installing](#installing)
 - [Usage](#usage)
 
-### Prerequisites
+## Prerequisites
 Before you can export a csv, you'll need to add the "iScholaris" sync config.
 1. Log into https://my.edval.education
 2. From the top-left, click **Daily** then **Synchronise**
 3. On the right, click **Add sync system** 
 4. From the **System** dropdown, select **iScholaris Flat file** and click **Save**
 
-### Installing
+## Installing
 
 ```
 pip install -r requirements.txt
