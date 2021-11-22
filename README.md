@@ -1,3 +1,6 @@
+# edvalpy
+A command-line tool used to export timetable data from [Edval](https://my.edval.education)
+
 - [edvalpy](#edvalpy)
   - [Requirements](#requirements)
   - [Prerequisites](#prerequisites)
@@ -5,9 +8,6 @@
   - [Usage](#usage)
     - [:computer: Command-line tool](#computer-command-line-tool)
     - [:snake: In a Python program or script](#snake-in-a-python-program-or-script)
-
-# edvalpy
-A command-line tool used to export timetable data from [Edval](https://my.edval.education)
 
 ## Requirements
 - :snake: [Python 3.8.5+](https://www.python.org/)
