@@ -1,13 +1,14 @@
 import os
+import datetime
 import requests
 from io import BytesIO
 from zipfile import ZipFile
-from .helpers.dates import get_sync_dates
 
 ##############################################################################################################################
 # Reminder! By default, classrooms DO NOT REMOVE students or teachers unless explicitly set by the addonly property.         #
 # - https://gitlab.com/mckinnon-sc-tech/gsuite-google-classroom-sync/classroom-group-sync-docker/-/blob/master/run.py#L76-79 #
 ##############################################################################################################################
+
 
 class Sync:
     def __init__(self, config, session):
@@ -81,5 +82,14 @@ class Edval:
         return [Sync(config, self.session) for config in self._configs]
 
 
-if __name__ == "__main__":
-    pass
+def get_sync_dates(days=14):
+    """
+    Returns formatted dates in a format required for the Edval.run_sync() function,
+    optionally the days parameter can be used to chose how far inthe future timetable data is returned.
+    Default is 14 days
+    """
+    data_from = datetime.datetime.now().strftime("%Y-%m-%d")
+    data_to = (datetime.datetime.now() + datetime.timedelta(days=days)).strftime(
+        "%Y-%m-%d"
+    )
+    return {"from": data_from, "to": data_to}
