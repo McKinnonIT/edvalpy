@@ -17,7 +17,7 @@ class Sync:
         self._config = config
         self._session = session
         self._base_download_url = "https://my.edval.education/files/{}"
-        self._base_url = "https://my.edval.education/api/v1/daily/syncBasic/1"
+        self._base_url = f'https://my.edval.education/api/v1/daily/syncBasic/{config["syncConfigCode"]}'
 
     def __repr__(self):
         return f"{self._config['sisCode']} ({self._config['syncConfigCode']})"
