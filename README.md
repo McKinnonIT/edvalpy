@@ -35,7 +35,7 @@ pip install -r requirements.txt
 ### :computer: Command-line tool
 
 ```bash
-python edvalpy --token "DJF47SL" --path "C:\Users\sc-vm\Downloads"
+python edvalpy --token "XXXXXXX" --path "C:\Users\sc-vm\Downloads"
 ```
 
 ```
