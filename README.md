@@ -11,6 +11,7 @@ A command-line tool used to export timetable data from [Edval](https://my.edval.
 
 ## Requirements
 - :snake: [Python 3.8.5+](https://www.python.org/)
+- [pip](https://pip.pypa.io/en/stable/installation/)
 - An Edval WebCode for https://my.edval.education
 
 ## Prerequisites
